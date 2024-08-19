@@ -1,0 +1,142 @@
+/* General Styling */
+.financial-holdings {
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    background: #121212; /* Dark background for the entire page */
+    min-height: 100vh;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    color: #e0e0e0; /* Light text color for contrast */
+    animation: fadeIn 1s ease-out;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #bb86fc; /* Soft purple color for title */
+    text-align: center;
+    font-weight: 700;
+    animation: slideIn 1s ease-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e1e1e; /* Dark gray background for table */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #333; /* Darker border for table rows */
+}
+
+th {
+    background-color: #333; /* Dark background for headers */
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+th:hover {
+    background-color: #555;
+    transform: scale(1.02);
+}
+
+td {
+    background-color: #242424; /* Dark background for cells */
+    color: #e0e0e0; /* Light text color */
+}
+
+td:last-child {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #1e1e1e; /* Slightly lighter dark gray for even rows */
+}
+
+tr:hover {
+    background-color: #333; /* Highlighted background on hover */
+    transition: background-color 0.3s ease;
+}
+
+.profit {
+    color: #4caf50; /* Green color for profit */
+    font-weight: bold;
+}
+
+.loss {
+    color: #f44336; /* Red color for loss */
+    font-weight: bold;
+}
+
+/* Additional Styling */
+.empty-message {
+    font-size: 1.6rem;
+    color: #bb86fc; /* Soft purple color for empty message */
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+.sell-button {
+    background-color: #f44336; /* Dark red for sell button */
+}
+
+.sell-button:hover {
+    background-color: #c62828;
+}
+
+.exit-all-button {
+    background-color: #2921c4; /* Bright yellow for exit all button */
+    margin-bottom: 10px;
+}
+
+.exit-all-button:hover {
+    background-color: #357bfd;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, h1, label, .text {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.login-page-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adjust the opacity here */
+    z-index: 0; /* Ensure the overlay is on top of the video but behind the content */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(90%);
+}
+
+.header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f00; /* Red color for header */
+    font-size: 3em;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #f00; /* Red border line */
+    text-shadow: 0 0 10px #f00; /* Glowing text effect */
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.login-form {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f00; /* Red color for heading */
+    text-shadow: 0 0 10px #f00; /* Glowing text effect */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    color: #fff;
+}
+
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #f00;
+    outline: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f00;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #d00;
+    transform: scale(1.05);
+}
+
+.error-text {
+    color: #f44336;
+    font-size: 0.9rem;
+}
+
+.text {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.text span {
+    color: #f00;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.text span:hover {
+    color: #d00;
+}
+
+.page-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.page-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

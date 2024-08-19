@@ -1,0 +1,15 @@
+/* StockList specific styles */
+.stock-info button {
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.stock-info button:hover {
+  background-color: #21a1f1;
+  transform: scale(1.05);
+}

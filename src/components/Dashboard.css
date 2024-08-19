@@ -1,0 +1,164 @@
+/* Dashboard.css */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+/* Stock List Styles */
+.stock-list {
+  width: 30%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.stock-list:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.stock-list h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.stock-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stock-item {
+  padding: 12px;
+  margin-bottom: 12px;
+  background-color: #f5f5f5; /* Light gray background */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stock-item:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stock-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stock-symbol {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.stock-price {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.selected {
+  border: 2px solid #007bff;
+  background-color: #e6f0ff;
+}
+
+/* Stock Chart Styles */
+.stock-chart {
+  width: 65%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+/* Buy Section Styles */
+.buy-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.quantity-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quantity-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.buy-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.buy-button:active {
+  background-color: #004494;
+}
+
+/* Current Holdings Styles */
+.current-holdings {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.current-holdings h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.current-holdings p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.current-holdings p span {
+  font-weight: bold;
+  color: #000;
+}

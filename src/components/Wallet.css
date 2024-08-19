@@ -1,0 +1,107 @@
+/* src/components/Wallet.css */
+
+.wallet-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.wallet-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.wallet-title:hover {
+  color: #4caf50;
+}
+
+.wallet-balance {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #f00;
+  margin-bottom: 25px;
+  transition: color 0.3s ease;
+}
+
+.wallet-balance:hover {
+  color: #ff5722;
+}
+
+.wallet-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.wallet-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wallet-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f00;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wallet-button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+.wallet-button:focus {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

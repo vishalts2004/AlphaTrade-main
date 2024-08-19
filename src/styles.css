@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #bb86fc;
+}
+
+.black-text {
+    color: black;
+  }
+  
+
+a:hover {
+    color: #ff4081;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.header:hover {
+    background-color: #333;
+}
+
+.header h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.header-nav a {
+    color: #e0e0e0;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #ff4081;
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.footer:hover {
+    background-color: #333;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #8e24aa;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #ff4081;
+    color: #121212;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #f50057;
+    transform: scale(1.05);
+}

@@ -1,0 +1,85 @@
+/* StockChart.css */
+
+.stock-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: linear-gradient(135deg, #ffffff 0%, #e6f0ff 100%); /* Light gradient for a soft, premium feel */
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for better depth */
+  transition: transform 0.3s ease; /* Smooth scale animation */
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+.stock-chart-container:hover {
+  transform: scale(1.02); /* Subtle zoom effect on hover */
+}
+
+.current-price-title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase; /* Uppercase for a bold look */
+  letter-spacing: 1px; /* Slight letter spacing for readability */
+}
+
+.price-display {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff; /* Bright blue for contrast */
+  margin-bottom: 25px;
+}
+
+.chart-wrapper {
+  width: 100%;
+  height: 450px; /* Increased height for better chart visibility */
+  margin-bottom: 20px;
+}
+
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.stock-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.buy-button, .sell-button {
+  background-color: #6200ea;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.buy-button:hover, .sell-button:hover {
+  transform: translateY(-3px); /* Lift the button on hover */
+}
+
+.buy-button {
+  background-color: #1db954; /* Bright green for buying */
+}
+
+.buy-button:hover {
+  background-color: #1aa34a;
+}
+
+.sell-button {
+  background-color: #d32f2f; /* Bright red for selling */
+}
+
+.sell-button:hover {
+  background-color: #b00020;
+}

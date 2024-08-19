@@ -1,0 +1,35 @@
+// src/data/stocksData.js
+
+export const stocksData = [
+  { symbol: 'AAPL', currentPrice: 150 },
+  { symbol: 'GOOGL', currentPrice: 2800 },
+  { symbol: 'MSFT', currentPrice: 300 },
+  { symbol: 'AMZN', currentPrice: 3500 },
+  { symbol: 'TSLA', currentPrice: 700 },
+  { symbol: 'FB', currentPrice: 370 },
+  { symbol: 'NFLX', currentPrice: 600 },
+  { symbol: 'NVDA', currentPrice: 750 },
+  { symbol: 'DIS', currentPrice: 180 },
+  { symbol: 'ADBE', currentPrice: 600 },
+  { symbol: 'INTC', currentPrice: 55 },
+  { symbol: 'PYPL', currentPrice: 290 },
+  { symbol: 'CRM', currentPrice: 260 },
+  { symbol: 'ORCL', currentPrice: 90 },
+  { symbol: 'IBM', currentPrice: 140 },
+  { symbol: 'CSCO', currentPrice: 55 },
+  { symbol: 'AMD', currentPrice: 100 },
+  { symbol: 'SQ', currentPrice: 250 },
+  { symbol: 'UBER', currentPrice: 45 },
+  { symbol: 'LYFT', currentPrice: 50 },
+  { symbol: 'SHOP', currentPrice: 1400 },
+  { symbol: 'TWTR', currentPrice: 70 },
+  { symbol: 'SNAP', currentPrice: 80 },
+  { symbol: 'ZM', currentPrice: 350 },
+  { symbol: 'DOCU', currentPrice: 280 },
+  { symbol: 'ROKU', currentPrice: 330 },
+  { symbol: 'SPOT', currentPrice: 270 },
+  { symbol: 'SQ', currentPrice: 250 },
+  { symbol: 'PLTR', currentPrice: 25 },
+  { symbol: 'BABA', currentPrice: 200 }
+];
+  
